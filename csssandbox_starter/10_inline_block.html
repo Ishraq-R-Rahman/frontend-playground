@@ -6,10 +6,56 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Inline & Block Styling</title>
   <style>
-   
+   li {
+    display: inline;
+   }
+
+   li a {
+     padding-right: 20px;
+   }
+
+   img {
+     margin: auto;
+     display: block;
+   }
+
+   .box {
+     box-sizing: border-box;
+     width: 32.8%;
+     background: #f4f4f4;
+     padding: 20px;
+     margin-bottom: 15px;
+     /* display: inline;
+     simple inline won't work since we can't use width in inline. */
+     display: inline-block;
+   }
   </style>
 </head>
 <body>
-  
+  <ul>
+    <li><a href="#">Technology</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Fashion</a></li>
+  </ul>
+  <br> <br>
+  <img src="/img/leaf.png" alt="Leaf in a circle" srcset="">
+  <img src="/img/leaf.png" alt="Leaf in a circle" srcset="">
+
+  <br> <br>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente sequi perferendis, officia amet dolorem nam necessitatibus animi culpa quaerat libero?</p>
+    
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente sequi perferendis, officia amet dolorem nam necessitatibus animi culpa quaerat libero?</p>
+
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente sequi perferendis, officia amet dolorem nam necessitatibus animi culpa quaerat libero?</p>
+
+  </div>
 </body>
 </html>
