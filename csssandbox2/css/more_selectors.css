@@ -1,0 +1,30 @@
+div p {
+    background: #ddd;
+}
+
+/* Direct Child */
+div > p {
+    background: grey;
+}
+
+/* Directly after an element */
+div + p {
+    background: red;
+}
+
+/* By attribute */
+a[target] {
+    background: pink;
+    color: white;
+}
+a[target = '_self'] {
+    background: green;
+    color: white;
+}
+
+/* Specific attribute values */
+input[type='text'][placeholder='Name'],
+input[type='email'] {
+    width: 100%; 
+    margin-bottom: 5px;
+}
