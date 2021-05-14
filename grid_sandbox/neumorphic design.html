@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cbafa5c523.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            transform: translate(-50% , -50%);
+        }
+
+        .container {
+            width: 350px;
+            height: 450px;
+            background: #ecf0f3;
+            border-radius: 20px;
+            
+            box-shadow: 14px 14px 20px #cbced1, 
+                        -14px -14px 20px white;
+
+            display: flex;
+            flex-direction: column;
+
+            color: #1DA1F2;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container > * {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Deselects the first two items */
+        .container > * + * + * {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .logo {
+            height: 100px;
+            width: 100px;
+            margin: 30px auto 20px auto;
+            border-radius: 50%;
+            box-shadow: 7px 7px 10px #cbced1 , -7px -7px 10px white;
+            font-size: 70px;
+
+            display: flex;
+        }
+
+        .logo i {
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            padding-bottom: 20px;
+            border-bottom: 0.2px black dotted;
+        }
+
+        label {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            align-self: flex-start;
+            font-size: 1.2rem;
+            font-style: oblique;
+            color: #333;
+        }
+
+        input {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            align-self: flex-start;
+            width: calc(100% - 20px); 
+            /* Because we added the margin values at the start  */
+            
+            color: black;
+            box-shadow: inset 6px 6px 6px #cbced1  , inset -6px -6px 6px white;
+            
+            text-align: left !important;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .btn {
+            background: #1DA1F2;
+            padding: 6px;
+            border-radius: 10px;
+            color: white;
+            font-size: 14px;
+            border: none;
+            margin-top: 25px;
+        }
+
+        .btn:hover {
+            background: #0769a7;
+        }
+    </style>
+    <title>Neumorphic Design</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <i class="fab fa-twitter"></i>
+        </div>
+        <h1>Twitter</h1>
+        <label for="Email" class="input-heading">Email</label>
+        <input type="email" name="Email" id="" placeholder="example@gmail.com" >
+        <label for="Password" class="input-heading">Password</label>
+        <input type="password" name="Pass" id="" >
+
+        <button type="submit" class="btn">Sign Up</button>
+
+    </div>
+</body>
+</html>
